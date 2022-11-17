@@ -33,13 +33,13 @@ namespace WindowsFormsApplication1 {
                 Name = name;
                 Image = ResourceImageHelper.CreateImageFromResources("DevExpress.XtraEditors.Images.loading.gif", typeof(BackgroundImageLoader).Assembly);
                 BackgroundImageLoader bg = new BackgroundImageLoader();
-                bg.Load(url);
-                bg.Loaded += (s, e) => {
-                    Image = bg.Result;
-                    if(!(Image is Image)) Image = ResourceImageHelper.CreateImageFromResources("DevExpress.XtraEditors.Images.Error.png", typeof(BackgroundImageLoader).Assembly);
+                 bg.Loaded += (s, e) => {
+                     Image = bg.ImageObject as Image;
+                    if (!(Image is Image)) Image = ResourceImageHelper.CreateImageFromResources("DevExpress.XtraEditors.Images.Error.png", typeof(BackgroundImageLoader).Assembly);
                     PropertyChanged(this, new PropertyChangedEventArgs("Image"));
                     bg.Dispose();
                 };
+                bg.Load(url);
             }
         }
     }
