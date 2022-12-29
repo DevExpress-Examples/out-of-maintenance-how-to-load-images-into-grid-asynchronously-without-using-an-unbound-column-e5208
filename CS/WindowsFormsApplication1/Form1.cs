@@ -36,7 +36,7 @@ namespace WindowsFormsApplication1 {
                      Image = bg.ImageObject as Image;
                     if (!(Image is Image)) Image = ResourceImageHelper.CreateImageFromResources("DevExpress.XtraEditors.Images.Error.png", typeof(BackgroundImageLoader).Assembly);
                     PropertyChanged(this, new PropertyChangedEventArgs("Image"));
-                    bg.Dispose();
+                    //bg.Dispose();
                 };
                 bg.Load(url);
             }
