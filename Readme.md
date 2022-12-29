@@ -12,7 +12,7 @@
 # How to load images into grid asynchronously without using an unbound column 
 
 
-<p>Starting with version 13.2.8, our controls contain the BackgroundImageLoader class that can be used to load Images asynchronously.<br />
+<p>Note that this solution uses inner API (the BackgroundImageLoader class) that might be changed in the future. That is why the correct solution here is to use standard techniques to load images dynamically.<br />
 </p>
 
 <br/>
