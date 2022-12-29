@@ -12,10 +12,10 @@ namespace WindowsFormsApplication1 {
         }
         private void Form1_Load(object sender, EventArgs e) {
             BindingList<PictureObject> list = new BindingList<PictureObject>();
-            list.Add(new PictureObject("Data Grid", @"https://www.devexpress.com/Products/NET/Controls/WinForms/i/landing/controls/WinForms-Data-Grid-VisualStudio2013-Light-Theme.png"));
-            list.Add(new PictureObject("Loading Error", @"https://www.devexpress.com/notfound.png"));
-            list.Add(new PictureObject("Banded Reporting", @"https://www.devexpress.com/Products/NET/Controls/WinForms/i/landing/controls/Reporting-VisualStudio2013-Light-Theme.png"));
-
+           list.Add(new PictureObject("Image0", @"https://i.imgur.com/tHyzhwKb.jpg"));
+            list.Add(new PictureObject("Image1", @"https://i.imgur.com/tHyzhwKb.jpg"));
+            list.Add(new PictureObject("Image2", @"https://i.imgur.com/tHyzhwKb.jpg"));
+            
             gridView1.OptionsView.RowAutoHeight = true;
             gridView1.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.AnimateAllContent;
             gridControl1.DataSource = list;
