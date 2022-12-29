@@ -16,9 +16,9 @@ Namespace WindowsFormsApplication1
 
         Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
             Dim list As BindingList(Of PictureObject) = New BindingList(Of PictureObject)()
-            list.Add(New PictureObject("Data Grid", "https://www.devexpress.com/Products/NET/Controls/WinForms/i/landing/controls/WinForms-Data-Grid-VisualStudio2013-Light-Theme.png"))
-            list.Add(New PictureObject("Loading Error", "https://www.devexpress.com/notfound.png"))
-            list.Add(New PictureObject("Banded Reporting", "https://www.devexpress.com/Products/NET/Controls/WinForms/i/landing/controls/Reporting-VisualStudio2013-Light-Theme.png"))
+            list.Add(New PictureObject("Image0", "https://i.imgur.com/tHyzhwKb.jpg"))
+            list.Add(New PictureObject("Image1", "https://i.imgur.com/tHyzhwKb.jpg"))
+            list.Add(New PictureObject("Image2", "https://i.imgur.com/tHyzhwKb.jpg"))
             gridView1.OptionsView.RowAutoHeight = True
             gridView1.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.AnimateAllContent
             gridControl1.DataSource = list
