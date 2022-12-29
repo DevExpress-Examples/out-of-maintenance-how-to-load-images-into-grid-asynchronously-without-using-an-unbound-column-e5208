@@ -44,7 +44,7 @@ Namespace WindowsFormsApplication1
                     Image = TryCast(bg.ImageObject, Image)
                     If Not(TypeOf Image Is Image) Then Image = ResourceImageHelperCore.CreateImageFromResources("DevExpress.XtraEditors.Images.Error.png", GetType(BackgroundImageLoader).Assembly)
                     RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("Image"))
-                    bg.Dispose()
+                'bg.Dispose();
                 End Sub
                 bg.Load(url)
             End Sub
